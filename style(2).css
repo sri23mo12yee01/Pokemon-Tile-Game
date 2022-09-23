@@ -1,0 +1,114 @@
+/*
+ Theme Name:     Divi Child
+ Theme URI:      https://www.massimogiraldo.com/divi/
+ Description:    Divi Child Theme
+ Author:         Massimo Giraldo
+ Author URI:     https://www.massimogiraldo.com
+ Template:       Divi
+ Version:        4.7.0
+*/
+ 
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+
+
+/* scroll to top button */
+
+.et_divi_100_custom_back_to_top .et_pb_scroll_top {
+	background: #0F124D;
+	border: 2px solid #ffffff;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15);
+    bottom: 10px;
+}
+
+
+.et_divi_100_custom_back_to_top .et_pb_scroll_top:hover {	background: #464980; }
+
+/* ----------- */
+
+
+
+/* Menu CTA Button*/
+
+#et-top-navigation .et_pb_button{
+	margin-top: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+#et-top-navigation .et_pb_button:after{
+	font-size: 23px;
+}
+
+
+/*
+* Removes the side bar from all the archive pages in the search result
+*/
+.search #main-content .container::before,
+.archive #main-content .container::before {
+display: none;
+}
+.search #left-area,
+.archive #left-area {
+width: 100%;
+float: none;
+padding-right: 0;
+}
+.search #sidebar,
+.archive #sidebar {
+display: none;
+} 
+
+/* increase minimum footer heigth to 80px*/
+#footer-bottom {
+    min-height: 80px;
+}
+
+
+/* Rename "« Older Entries" e "Next Entries »" links in "« Previous results" and "Next Results »" */
+
+.pagination .alignleft a {
+	color: #ffffff00;
+	color: rgba(255,255,255,0);
+	position: relative;
+}
+.pagination .alignleft a:after {
+	content: "« Previous results";
+	position: absolute;
+	text-align: left;
+	width: 200px;
+	left: 0;
+	color: #464980;
+}
+.pagination .alignright a {
+	color: #ffffff00;
+	color: rgba(255,255,255,0);
+ 	position: relative;
+}
+.pagination .alignright a:after {
+	content: "Next Results »";
+	position: absolute;
+	text-align: right;
+	width: 200px;
+	right: 0;
+	color: #464980;
+}
+
+.due-colonne .et_pb_column {
+	width: 50%!important;
+}
+
+
+/* Increase width of drop-down menus */
+@media screen and (min-width: 981px) {
+	.sub-menu {
+		min-width: 300px;
+	}
+	#top-menu li li a {
+		width: 260px;
+		/* Extra - Reduce padding on list items */
+		padding: 4px 12px;
+		}
+	}
